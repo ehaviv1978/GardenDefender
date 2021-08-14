@@ -73,8 +73,6 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadPreviousScene()
     {
-        print("Hi");
-        //SetPreviousSceneIndex();
         SceneManager.LoadScene(previusSceneIndex);
     }
 

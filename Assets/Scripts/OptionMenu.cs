@@ -10,6 +10,14 @@ public class OptionMenu : MonoBehaviour
     [SerializeField] [Range(0,1)] private float defaultVolume = 0.5f;
     [SerializeField] [Range(1,5)] private int defaultDifficulty = 1;
 
+
+    private void Start()
+    {
+        sliderVolume.value = GameSessionManager.Instance.GetVolume();
+        sliderDifficulty.value = GameSessionManager.Instance.GetDifficulty();
+    }
+
+
     public void BackToDefult()
     {
         sliderVolume.value = defaultVolume;
@@ -19,12 +27,12 @@ public class OptionMenu : MonoBehaviour
 
     public void SetVolume()
     {
-        GameStateManager.Instance.SetVolume(sliderVolume.value);
+        GameSessionManager.Instance.SetVolume(sliderVolume.value);
     }
 
     public void SetDifficulty()
     {
-        GameStateManager.Instance.SetDifficulty(Mathf.RoundToInt(sliderDifficulty.value));
+        GameSessionManager.Instance.SetDifficulty(Mathf.RoundToInt(sliderDifficulty.value));
     }
 
     public void BackToPreviousScene()
