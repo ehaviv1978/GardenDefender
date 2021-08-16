@@ -3,14 +3,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeffenderSpawner : MonoBehaviour
+public class DefenderSpawner : MonoBehaviour
 {
-   Deffender deffender;
+
+    Defender defender;
+    private GameObject defenderPerent;
+
+    private const string DEFFENDER_PERENT_NAME = "Defenders";
+
+
+    private void Start()
+    {
+        CreateDefenderPerent();
+    }
+
+    private void CreateDefenderPerent()
+    {
+        defenderPerent = GameObject.Find(DEFFENDER_PERENT_NAME);
+        if (defenderPerent == null)
+        {
+            defenderPerent = new GameObject(DEFFENDER_PERENT_NAME);
+        }
+    }
 
 
     private void OnMouseDown()
     {
-        if (!deffender) return;
+        if (!defender) return;
         AttemptToSpwanDeffenderAt(GetSquerClicked());
     }
 
@@ -27,7 +46,7 @@ public class DeffenderSpawner : MonoBehaviour
     private void AttemptToSpwanDeffenderAt(Vector2 location)
     {
         var starDisplay = FindObjectOfType<StarDisplay>();
-        int starCost = deffender.GetStarCost();
+        int starCost = defender.GetStarCost();
         if (starDisplay.SpendStars(starCost))
         {
             SpawnDeffender(location);
@@ -35,14 +54,15 @@ public class DeffenderSpawner : MonoBehaviour
     }
 
 
-    public void SetDeffender(Deffender selectedDeffender)
+    public void SetDeffender(Defender selectedDeffender)
     {
-        deffender = selectedDeffender;
+        defender = selectedDeffender;
     }
 
 
     private void SpawnDeffender(Vector2 position)
     {
-        var newDeffender = Instantiate(deffender, position, Quaternion.identity) as Deffender;
+        var newDeffender = Instantiate(defender, position, Quaternion.identity) as Defender;
+        newDeffender.transform.parent = defenderPerent.transform;
     }
 }

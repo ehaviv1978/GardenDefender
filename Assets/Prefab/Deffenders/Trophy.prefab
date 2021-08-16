@@ -91,10 +91,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6532796216802619157}
-  - component: {fileID: -5490782633147303817}
   - component: {fileID: 7067037340435378178}
   - component: {fileID: 9137457720669124615}
   - component: {fileID: -1022929122828770899}
+  - component: {fileID: 7510351390619614003}
   m_Layer: 0
   m_Name: Trophy
   m_TagString: Untagged
@@ -119,19 +119,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5490782633147303817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6532796216802619159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c89ef2722a49b540a425b0c3ff2c5bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 60
 --- !u!95 &7067037340435378178
 Animator:
   serializedVersion: 3
@@ -191,6 +178,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 10
   deathVFX: {fileID: 0}
+--- !u!114 &7510351390619614003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6532796216802619159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be445656e72f7b44f8641de9508a9160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 60
 --- !u!1 &6532796217243246297
 GameObject:
   m_ObjectHideFlags: 0

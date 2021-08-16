@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8298056528538134124}
   - component: {fileID: 8298056528538134122}
-  - component: {fileID: 8298056528538134125}
+  - component: {fileID: 4369423791194500789}
   m_Layer: 0
   m_Name: PlayArea
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7, y: 5}
   m_EdgeRadius: 0
---- !u!114 &8298056528538134125
+--- !u!114 &4369423791194500789
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,6 +67,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8298056528538134127}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff1234b292ea014da4020912618bb16, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c6ed678e6733ba4dbd15855864c72cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

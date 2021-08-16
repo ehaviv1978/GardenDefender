@@ -7,7 +7,7 @@ public class Lizard : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject other = collision.gameObject;
-        if (collision.GetComponent<Deffender>())
+        if (collision.GetComponent<Defender>())
         {
             GetComponent<Attacker>().Attack(other);
         }

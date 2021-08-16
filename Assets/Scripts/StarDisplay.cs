@@ -5,11 +5,15 @@ using TMPro;
 
 public class StarDisplay : MonoBehaviour
 {
-    [SerializeField] int starAmount = 100;
+    [SerializeField] private int _startStarAmount = 100;
     TextMeshProUGUI starText;
+
+    private int starAmount;
+
 
     void Start()
     {
+        starAmount = Mathf.RoundToInt(_startStarAmount / GameSessionManager.Instance.GetDifficulty());
         starText = GetComponent<TextMeshProUGUI>();
         UpdateStarText();
     }

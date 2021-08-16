@@ -122,11 +122,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1664603594867614739}
-  - component: {fileID: -218895328929864944}
   - component: {fileID: 6297733211221257944}
   - component: {fileID: 3950401856382725554}
   - component: {fileID: 3141370110595005467}
   - component: {fileID: -4528530183451998032}
+  - component: {fileID: 8659660875467415270}
   m_Layer: 0
   m_Name: Gnome
   m_TagString: Untagged
@@ -149,19 +149,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-218895328929864944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7495979368222816757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c89ef2722a49b540a425b0c3ff2c5bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 80
 --- !u!114 &6297733211221257944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,3 +222,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 20
   deathVFX: {fileID: 0}
+--- !u!114 &8659660875467415270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7495979368222816757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be445656e72f7b44f8641de9508a9160, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 100

@@ -8,6 +8,7 @@ public class GameSessionManager : MonoBehaviour
     private int difficultyLevel = 1;
 
     public static GameSessionManager Instance;
+
     private const string KEY_MASTER_VOLUME_LEVEL = "Volume Level";
     private const string KEY_DIFFICULTY_LEVEL = "Difficulty Level";
 
