@@ -1480,19 +1480,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6572691829177845738, guid: 181450d164dc157458cf7376ea8b3427, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6572691829955999841, guid: 181450d164dc157458cf7376ea8b3427, type: 3}
       propertyPath: m_Name
       value: Buttons
-      objectReference: {fileID: 0}
-    - target: {fileID: 6572691830186356003, guid: 181450d164dc157458cf7376ea8b3427, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6572691830665690010, guid: 181450d164dc157458cf7376ea8b3427, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8967241491394552174, guid: 181450d164dc157458cf7376ea8b3427, type: 3}
       propertyPath: m_Pivot.x
